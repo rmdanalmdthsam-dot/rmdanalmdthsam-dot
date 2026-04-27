@@ -1,363 +1,706 @@
-<h1 align="center">Awesome GitHub Profile README
-<a href="https://www.producthunt.com/posts/awesome-github-profiles?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-awesome-github-profiles" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=277987&theme=light" alt="Awesome GitHub Profiles - Best curated list of developers readme, updated every 15 min | Product Hunt" style="width: 200px; height: 44px;" width="200" height="44" /></a></h1>
-<div align="center">
-<img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Badge"/>
-<a href="https://arbeitnow.com/?utm_source=awesome-github-profile-readme"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=arbeitnow&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
-<!-- <img src="http://hits.dwyl.com/abhisheknaiidu/awesome-github-profile-readme.svg" alt="Hits Badge"/> -->
-<img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
-<a href="https://discord.gg/XTW52Kt"><img src="https://img.shields.io/discord/733027681184251937.svg?style=flat&label=Join%20Community&color=7289DA" alt="Join Community Badge"/></a>
-<a href="https://twitter.com/abhisheknaiidu" ><img src="https://img.shields.io/twitter/follow/abhisheknaiidu.svg?style=social" /> </a>
-<br>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حسام رمضان - بورتفوليو</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-<i>A curated list of awesome Github Profile READMEs</i>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8C97A;
+    --gold-dim: #8B6914;
+    --black: #0A0A0A;
+    --dark: #111111;
+    --dark2: #1A1A1A;
+    --dark3: #242424;
+    --text: #E8E0D0;
+    --text-muted: #8A8070;
+  }
 
-<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/stargazers"><img src="https://img.shields.io/github/stars/abhisheknaiidu/awesome-github-profile-readme" alt="Stars Badge"/></a>
-<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/network/members"><img src="https://img.shields.io/github/forks/abhisheknaiidu/awesome-github-profile-readme" alt="Forks Badge"/></a>
-<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/pulls"><img src="https://img.shields.io/github/issues-pr/abhisheknaiidu/awesome-github-profile-readme" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/issues"><img src="https://img.shields.io/github/issues/abhisheknaiidu/awesome-github-profile-readme" alt="Issues Badge"/></a>
-<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/abhisheknaiidu/awesome-github-profile-readme?color=2b9348"></a>
-<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/blob/master/LICENSE"><img src="https://img.shields.io/github/license/abhisheknaiidu/awesome-github-profile-readme?color=2b9348" alt="License Badge"/></a>
+  html { scroll-behavior: smooth; }
 
-<img alt="Awesome GitHub Profile Readme" src="assets/agpr.gif"> </img>
+  body {
+    font-family: 'Cairo', sans-serif;
+    background: var(--black);
+    color: var(--text);
+    overflow-x: hidden;
+  }
 
-<i>Loved the project? Please consider [donating](https://paypal.me/abhisheknaiidu) to help it improve!</i>
+  /* ===== NAVBAR ===== */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 4rem;
+    background: rgba(10,10,10,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+  }
 
-</div>
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--gold);
+    letter-spacing: 2px;
+  }
 
-### Contents:
-  - [Categories](#categories)
-      - [GitHub Actions 🤖](#github-actions-)
-      - [Game Mode 🚀](#game-mode-)
-      - [Code Mode 👨🏽‍💻](#code-mode-)
-      - [Dynamic Realtime 💫](#dynamic-realtime-)
-      - [A Little Bit of Everything 😃](#a-little-bit-of-everything-)
-      - [Descriptive 🗒](#descriptive-)
-      - [Simple but Innovative Ones 🤗](#simple-but-innovative-ones-)
-      - [Typing.. Mode 🎰](#typing-mode-)
-      - [Anime 👾](#anime-)
-      - [Minimalistic ✨](#minimalistic-)
-      - [GIFS 👻](#gifs-)
-      - [Just Images 🎭](#just-images-)
-      - [Badges 🎫](#badges-)
-      - [Fancy Fonts 🖋](#fancy-fonts-)
-      - [Icons 🎯](#icons-)
-      - [Retro 😎](#retro-)
-  - [Tools](#tools)
-  - [Articles](#articles)
-  - [Video Tutorials](#tutorials)
-  - [Contribute](#contribute)
-  - [License](#license)
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    position: relative;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0; right: 0;
+    height: 1px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a:hover::after { transform: scaleX(1); }
 
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+    position: relative;
+    overflow: hidden;
+  }
 
-## Categories
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -20%; right: -10%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
 
-#### GitHub Actions 🤖
-- [Abhishek Naidu](https://github.com/abhisheknaiidu/abhisheknaiidu)
-- [Thomas Guibert](https://github.com/thmsgbrt/thmsgbrt)
-- [Brian Douglas](https://github.com/bdougie/bdougie)
-- [Shawn Wang](https://github.com/sw-yx/sw-yx)
-- [Simon Willison](https://github.com/simonw/simonw)
-- [Mike Coutermarsh](https://github.com/mscoutermarsh/mscoutermarsh)
-- [Michael Hoffmann (Mokkapps)](https://github.com/mokkapps/mokkapps)
-- [Athul Cyriac Ajay](https://github.com/athul/athul)
-- [Gautam Krishna R](https://github.com/gautamkrishnar/gautamkrishnar)
-- [Roald Nefs](https://github.com/roaldnefs/roaldnefs)
-- [Leo](https://github.com/mopig/mopig)
-- [Dhruv Jain](https://github.com/maddhruv/maddhruv)
-- [Erwin Lejeune](https://github.com/guilyx/guilyx)
-- [Jessica Lim](https://github.com/JessicaLim8/JessicaLim8)
-- [侑夕-Tw93](https://github.com/tw93/tw93)
-- [liununu](https://github.com/liununu/liununu)
-- [Filippo Rossi (qu4k)](https://github.com/qu4k/qu4k)
-- [Moe Poi ~](https://github.com/moepoi/moepoi)
-- [Elon Tang (blackcater)](https://github.com/blackcater/blackcater)
-- [Stanley Lim (Spiderpig86)](https://github.com/Spiderpig86/Spiderpig86)
-- [Akshit Garg (gargakshit)](https://github.com/gargakshit/gargakshit)
-- [Yufan You](https://github.com/ouuan/ouuan)
-- [Danny Koppenhagen](https://github.com/d-koppenhagen/d-koppenhagen)
-- [Vidya Bhandary](https://github.com/vidyabhandary/vidyabhandary)
-- [Rao Hai](https://github.com/RaoHai/RaoHai)
-- [Jatin Rao](https://github.com/jatin2003/jatin2003)
-- [teoxoy](https://github.com/teoxoy/teoxoy)
-- [Aral Roca](https://github.com/aralroca/aralroca)
-- [codeSTACKr](https://github.com/codestackr/codestackr)
-- [itgoyo](https://github.com/itgoyo/itgoyo)
-- [lifeparticle](https://github.com/lifeparticle/lifeparticle)
+  .hero-grid-line {
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 1px;
+    background: rgba(201,168,76,0.06);
+  }
+  .hero-grid-line:nth-child(1) { left: 25%; }
+  .hero-grid-line:nth-child(2) { left: 50%; }
+  .hero-grid-line:nth-child(3) { left: 75%; }
 
-#### Game Mode 🚀
-- [Tim Burgan](https://github.com/timburgan/timburgan)
-- [Ben Sampica](https://github.com/benjaminsampica/benjaminsampica)
-- [Kavish Hukmani](https://github.com/DoubleGremlin181/DoubleGremlin181)
-- [Jonathan Gin](https://github.com/JonathanGin52/JonathanGin52)
-- [Ross Williams](https://github.com/rossjrw/rossjrw)
-- [kylepls](https://github.com/kylepls/kylepls)
-- [Aaron Liu](https://github.com/HFO4/HFO4)
-- [marcizhu](https://github.com/marcizhu/marcizhu)
+  .hero-content { position: relative; z-index: 2; max-width: 700px; }
 
-#### Code Mode 👨🏽‍💻
-- [Thaiane Braga](https://github.com/Thaiane/Thaiane)
-- [Ash Baker](https://github.com/ashbakernz/ashbakernz)
-- [Anmol Singh](https://github.com/anmol098/anmol098)
-- [Kiho](https://github.com/monkindey/monkindey)
-- [Marton](https://github.com/martonlederer/martonlederer)
-- [Redowan Delowar](https://github.com/rednafi/rednafi)
-- [Zhenye Na](https://github.com/Zhenye-Na/Zhenye-Na)
+  .hero-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.2s forwards;
+  }
 
-#### Dynamic Realtime 💫
-- [Kirill Feschenko](https://github.com/xcaq/xcaq)
-- [Anurag Hazra](https://github.com/anuraghazra/anuraghazra)
-- [DenverCoder1](https://github.com/DenverCoder1/DenverCoder1)
-- [Hemant Joshi](https://github.com/8bithemant/8bithemant)
-- [Kittinan](https://github.com/kittinan/kittinan)
-- [Andrew Novac](https://github.com/novatorem/novatorem)
-- [Johnny Villegas](https://github.com/C9-LinkRs/C9-LinkRs)
-- [Andrew Young](https://github.com/andyruwruw/andyruwruw)
-- [Rashmi Jadhav](https://github.com/rusty-sj/rusty-sj)
-- [andyruwruw](https://github.com/andyruwruw/andyruwruw)
-- [Jacob Colvin](https://github.com/MacroPower/MacroPower)
-- [Osman Durdağ](https://github.com/zumrudu-anka/zumrudu-anka)
-- [iampavangandhi](https://github.com/iampavangandhi/iampavangandhi)
-- [Dani Akash](https://github.com/daniakash/daniakash)
-- [Rahul Jha](https://github.com/rahul-jha98/rahul-jha98)
-- [Taehyun Hwang](https://github.com/HwangTaehyun/HwangTaehyun)
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.4s forwards;
+  }
 
-#### A Little Bit of Everything 😃
-- [Raymond Li](https://github.com/Raymo111/Raymo111)
-- [Martin Heinz](https://github.com/MartinHeinz/MartinHeinz)
-- [Adam Alston](https://github.com/adamalston/adamalston)
-- [Rafnix Guzmán](https://github.com/rafnixg/rafnixg)
-- [Aditya Pal](https://github.com/sciencepal/sciencepal)
-- [Hedy Li](https://github.com/hedythedev/hedythedev)
-- [Xunzhuo](https://github.com/xunzhuo/xunzhuo)
-- [Khaleel Gibran](https://github.com/khalby786/khalby786)
-- [Apoorv Tyagi](https://github.com/apoorvtyagi/apoorvtyagi)
-- [CxyFreedom](https://github.com/cxyfreedom/cxyfreedom)
-- [Miller Camilo Vega](https://github.com/minoveaz/minoveaz)
-- [Abhishek Maira](https://github.com/AbhishekMaira10/AbhishekMaira10)
-- [Clayton Hamilton](https://github.com/claytonjhamilton/claytonjhamilton)
-- [Sy Rashid](https://github.com/syrashid/syrashid)
-- [Quin Knight](https://github.com/cheesits456/cheesits456)
-- [Jackyu-1999](https://github.com/Jackyu-1999/Jackyu-1999)
-- [Rak Laptudirm](https://github.com/raklaptudirm/raklaptudirm)
-- [Trini B](https://github.com/trinib/trinib)
-- [holic-x](https://github.com/holic-x/holic-x)
-- [Magrelaio](https://github.com/Magrelaio/Magrelaio)
+  .hero-name span {
+    display: block;
+    background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dim));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
-#### Descriptive 🗒
-- [Filip Troníček](https://github.com/filiptronicek/filiptronicek)
-- [Garima Singh](https://github.com/garimasingh128/garimasingh128)
-- [lizheming](https://github.com/lizheming/lizheming)
-- [Nguyễn Hoàng Dương](https://github.com/you-create/you-create)
-- [Saksham Taneja](https://github.com/sakshamtaneja21/sakshamtaneja21)
-- [TheAbbie](https://github.com/theabbie/theabbie)
-- [Keshav Singh](https://github.com/keshavsingh4522/keshavsingh4522)
-- [Vidur Satija](https://github.com/vidursatija/vidursatija)
-- [Dani El-Ayyass](https://github.com/dayyass/dayyass)
-- [Nanra Sukedy](https://github.com/Nanra/Nanra)
+  .hero-title {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.6s forwards;
+  }
 
-#### Simple but Innovative Ones 🤗
-- [Nate Moore](https://github.com/natemoo-re/natemoo-re)
-- [Jhey Tompkins](https://github.com/jh3y/jh3y)
-- [Waylon Walker](https://github.com/WaylonWalker/WaylonWalker)
-- [Vansh Kapoor](https://github.com/vanshkapoor/vanshkapoor)
-- [Harsh Kumar Khatri](https://github.com/harshkumarkhatri/harshkumarkhatri)
-- [Stephen Ajulu](https://github.com/stephenajulu/stephenajulu)
-- [Haany Ali](https://github.com/MarikIshtar007/MarikIshtar007)
-- [Anurag Singh](https://github.com/ashleymavericks/ashleymavericks)
-- [Rishit Dagli](https://github.com/Rishit-dagli/Rishit-dagli)
-- [Vinit Shahdeo](https://github.com/vinitshahdeo/vinitshahdeo/)
-- [Fatih Kadir Akın](https://github.com/f/f/)
-- [Lucas Vazquez](https://github.com/lucasvazq/lucasvazq)
-- [小弟调调™](https://github.com/jaywcjlove/jaywcjlove)
-- [alx365](https://github.com/alx365/alx365)
-- [Johnny Villegas](https://github.com/C9-LinkRs/C9-LinkRs)
-- [一缕殇流化隐半边冰霜](https://github.com/halfrost/halfrost)
-- [Srihari Kapu](https://github.com/sriharikapu/sriharikapu)
-- [vaaski](https://github.com/vaaski/vaaski)
-- [Arturs Smirnovs](https://github.com/arturssmirnovs/arturssmirnovs)
-- [Yash Sahijwani](https://github.com/Terabyte17/Terabyte17)
-- [Hemanth Kollipara](https://github.com/Defcon27/Defcon27)
-- [Tushar Mittal](https://github.com/techytushar/techytushar)
-- [Onimur](https://github.com/onimur/onimur)
-- [Bruno Tacca](https://github.com/brunotacca/brunotacca)
-- [Matthew Taylor](https://github.com/Wrapperup/Wrapperup)
+  .hero-btns {
+    display: flex;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.8s forwards;
+  }
 
-#### Typing.. Mode 🎰
-- [Mathieu Ledru](https://github.com/matyo91/matyo91)
-- [CyrisXD](https://github.com/CyrisXD/CyrisXD)
-- [Mpho Mphego](https://github.com/mmphego/mmphego)
-- [Abhinav Sharma](https://github.com/ABSphreak/ABSphreak)
-- [Mason Slover](https://github.com/MasonSlover/MasonSlover)
-- [SuperSupeng](https://github.com/SuperSupeng/SuperSupeng)
+  .btn-primary {
+    padding: 0.9rem 2.5rem;
+    background: var(--gold);
+    color: var(--black);
+    border: none;
+    font-family: 'Cairo', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+  }
 
-#### Anime 👾
-- [Ing](https://github.com/innng/innng)
-- [edisonlee55](https://github.com/edisonlee55/edisonlee55)
-- [Ashutosh](https://github.com/Xx-Ashutosh-xX/Xx-Ashutosh-xX)
-- [Yukii](https://github.com/PrincessAkira/PrincessAkira)
+  .btn-outline {
+    padding: 0.9rem 2.5rem;
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    font-family: 'Cairo', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  .btn-outline:hover {
+    background: rgba(201,168,76,0.08);
+    transform: translateY(-2px);
+  }
 
-#### Minimalistic ✨
-- [Caneco](https://github.com/caneco/)
-- [Gift Egwuenu](https://github.com/lauragift21/lauragift21)
-- [Kelechi Precious Nwachukwu](https://github.com/PluckyPrecious/PluckyPrecious)
-- [Ghazi Khan](https://github.com/gkhan205)
-- [Pratik Kumar](https://github.com/pr2tik1/pr2tik1)
-- [Dennis Hartrampf](https://github.com/DennisHartrampf/DennisHartrampf)
-- [MrStanDu33](https://github.com/MrStanDu33/MrStanDu33)
-- [Jayraj Roshan](https://github.com/jayrajroshan/jayrajroshan)
-- [amxchang](https://github.com/amxchang/amxchang)
-- [ridermansb](https://github.com/Ridermansb/Ridermansb)
-- [Maximous Black](https://github.com/maximousblk/maximousblk)
-- [Alex Martin](https://github.com/AlexMartinFR/AlexMartinFR)
-- [ChungZH](https://github.com/ChungZH/ChungZH/)
-- [Orhun](https://github.com/orhun/orhun)
-- [Aveek Saha](https://github.com/Aveek-Saha/Aveek-Saha)
-- [Federico Dondi](https://github.com/federico-dondi)
-- [Zheeeng](https://github.com/Zheeeng/Zheeeng)
-- [TallGuyJenks](https://github.com/tallguyjenks/tallguyjenks)
-- [Stefanie Grunwald](https://github.com/moertel/moertel)
-- [Abdul Khaliq](https://github.com/kha7iq/kha7iq)
+  .hero-number {
+    position: absolute;
+    left: 4rem; bottom: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(201,168,76,0.04);
+    pointer-events: none;
+    z-index: 1;
+    line-height: 1;
+  }
 
-#### GIFS 👻
-- [Pouya Saadeghi](https://github.com/saadeghi/saadeghi)
-- [Ari](https://github.com/ari-hacks/ari-hacks)
-- [Siv Ram Shastri](https://github.com/Prince-Shivaram/Prince-Shivaram)
-- [Shanu Mishra](https://github.com/Shanu1515/Shanu1515)
-- [Shubham Kumar](https://github.com/imskr/imskr)
-- [Duncan](https://github.com/dephraiim/dephraiim)
-- [Demartini](https://github.com/demartini/demartini)
-- [Sindre Sorhus](https://github.com/sindresorhus/sindresorhus)
-- [Pranjal Bhardwaj](https://github.com/Bhard27/Bhard27)
-- [Okan Koçyiğit](https://github.com/okankocyigit/okankocyigit)
-- [Raghav Khullar](https://github.com/RaghavK16/RaghavK16)
-- [xrkffgg](https://github.com/xrkffgg/xrkffgg)
-- [Kevin Cui](https://github.com/KevCui/KevCui)
-- [Muskan Rani](https://github.com/muskanrani/muskanrani)
-- [Rishav Anand](https://github.com/rishavanand/rishavanand)
-- [KelviNosse](https://github.com/KelviNosse/KelviNosse)
-- [nilfalse](https://github.com/nilfalse/nilfalse)
-- [Shahriar Shafin](https://github.com/ShahriarShafin/ShahriarShafin)
-- [Somnath Paul](https://github.com/SP-XD/SP-XD)
-- [Ksenia Morozova](https://github.com/kmoroz/kmoroz)
+  /* ===== SECTION BASE ===== */
+  section { padding: 7rem 4rem; }
+  .section-label {
+    font-size: 0.7rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.8rem;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--text);
+  }
+  .section-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
 
-#### Just Images 🎭
-- [Zack Krida](https://github.com/zackkrida/zackkrida)
-- [偏右](https://github.com/afc163/afc163)
-- [thewhiteh4t](https://github.com/thewhiteh4t/thewhiteh4t)
-- [Akash Rai](https://github.com/akasrai/akasrai)
-- [Oussama Bouchikhi](https://github.com/oussamabouchikhi/oussamabouchikhi)
-- [Daily Random Photo](https://github.com/dailyrandomphoto/dailyrandomphoto)
+  /* ===== DIVIDER ===== */
+  .gold-line {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin-bottom: 1.5rem;
+  }
 
-#### Badges 🎫
-- [Harish Kumar S S](https://github.com/harish-sethuraman/harish-sethuraman)
-- [Anirudh Emmadi](https://github.com/aemmadi/aemmadi)
-- [Brendon Smith](https://github.com/br3ndonland/br3ndonland)
-- [Alwin Wang](https://github.com/alwinw/alwinw)
-- [Moshfiq Rony](https://github.com/moshfiqrony/moshfiqrony)
-- [Ileriayo Adebiyi](https://github.com/ileriayo/ileriayo)
-- [Samujjwaal Dey](https://github.com/samujjwaal/samujjwaal)
-- [Char-Al](https://github.com/char-al/char-al)
-- [Oka](https://github.com/Coordinate-Cat/Coordinate-Cat)
-- [Nikita Rusetskii](https://github.com/xtenzQ/xtenzQ)
-- [Raphael Ebner](https://github.com/rafi0101/rafi0101)
+  /* ===== ABOUT ===== */
+  .about { background: var(--dark); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .about-image-wrap {
+    position: relative;
+  }
+  .about-image {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    display: block;
+  }
+  .about-image-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: var(--dark3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    position: relative;
+  }
+  .about-image-border {
+    position: absolute;
+    top: 16px; left: 16px; right: -16px; bottom: -16px;
+    border: 1px solid var(--gold);
+    z-index: -1;
+  }
+  .about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .stat-card {
+    background: var(--dark2);
+    border: 1px solid rgba(201,168,76,0.12);
+    padding: 1.5rem;
+  }
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--gold);
+    display: block;
+  }
+  .stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+  }
 
-#### Fancy Fonts 🖋
-- [xiaoluoboding](https://github.com/xiaoluoboding/xiaoluoboding)
+  /* ===== SKILLS ===== */
+  .skills { background: var(--black); }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .skill-card {
+    background: var(--dark2);
+    border: 1px solid rgba(201,168,76,0.1);
+    padding: 2rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+  }
+  .skill-card:hover::before { transform: scaleX(1); transform-origin: left; }
+  .skill-card:hover { border-color: rgba(201,168,76,0.3); transform: translateY(-4px); }
 
-#### Icons 🎯
-- [Yuan Tang](https://github.com/terrytangyuan/terrytangyuan)
-- [Hussainweb](https://github.com/hussainweb/hussainweb)
-- [Peter Han](https://github.com/peterthehan/peterthehan)
-- [Thomas George Thomas](https://github.com/Thomas-George-T/Thomas-George-T)
-- [Derek Nguyen](https://github.com/dereknguyen269/dereknguyen269)
-- [Valentin Briand](https://github.com/vbriand/vbriand)
+  .skill-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  .skill-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  .skill-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
+  .skill-bar-wrap { margin-top: 1.2rem; }
+  .skill-bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+  }
+  .skill-bar-bg {
+    height: 2px;
+    background: rgba(255,255,255,0.05);
+    position: relative;
+  }
+  .skill-bar-fill {
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    background: linear-gradient(90deg, var(--gold-dim), var(--gold));
+  }
 
-#### Retro 😎
-- [Livio Brunner](https://github.com/BrunnerLivio/BrunnerLivio)
-- [Christian Petersen](https://github.com/fnky/fnky)
+  /* ===== PROJECTS ===== */
+  .projects { background: var(--dark); }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .project-card {
+    background: var(--dark2);
+    border: 1px solid rgba(201,168,76,0.08);
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .project-card:hover { border-color: rgba(201,168,76,0.3); transform: translateY(-6px); }
+  .project-img {
+    width: 100%;
+    height: 200px;
+    background: var(--dark3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .project-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 60%, var(--dark2));
+  }
+  .project-body { padding: 1.5rem; }
+  .project-tag {
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+  }
+  .project-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+  }
+  .project-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: gap 0.3s;
+  }
+  .project-link:hover { gap: 0.8rem; }
 
-## Tools
-- [Todoist Stats in Readme](https://github.com/abhisheknaiidu/todoist-readme) - Daily Todoist Stats on your Profile Readme
-- [Visitor Badge](https://visitor-badge.glitch.me/#docs) - Count visitors for your README.md, Issues, PRs in GitHub
-- [1990s style Visitor Counter](https://twitter.com/ryanlanciaux/status/1283755637126705152) - Add a 1990s style visitor counter with one line of markdown.
-- [Visitor Count](https://pufler.dev/badge-it/) - Count visitors for README.md that can be used with shields.io
-- [Shields Project](https://shields.io/) - Use Shields to create profile badges, compatible with Simple Icons
-- [Github Readme Stats](https://github.com/anuraghazra/github-readme-stats) - Get dynamically generated GitHub stats on your readmes
-- [Github Contributor Stats](https://github.com/HwangTaehyun/github-contributor-stats) - :fire: Get dynamically generated Github Contributor stats (repositories you really committed) on your readmes
-- [GitHub Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats) - 🔥 Stay motivated and show off your contribution streak! 🌟 Display your total contributions, current streak, and longest streak on your GitHub profile README
-- [Simple Icons](https://github.com/simple-icons/simple-icons#cdn-usage) -  SVG icons for popular brands for your README.md files
-- [Laravel GitHub Profile Visit Counter](https://github.com/caneco/laravel-github-profile-view-counter) - Add on your Laravel project a quick-badge to count your profile visits.
-- [Dev Metrics in Readme](https://github.com/athul/waka-readme) - [WakaTime](https://wakatime.com/) Weekly Metrics on your Profile Readme
-- [Profile Activity Generator](https://github.com/omidnikrah/profile-activity-generator) - Generate custom profile activity for your profile README
-- [Current UTC time](https://github.com/jojoee/jojoee) - Example code of server that can serve dynamic content on GitHub profile
-- [Github Activity in README](https://github.com/jamesgeorge007/github-activity-readme) - Updates `README.md` with the recent GitHub activity of a user
-- [Github Profile README Generator](https://github.com/rahuldkjain/github-profile-readme-generator) - This tool provides an easy way to create github profile readme with latest addons like `visitors count`, `github stats` etc.
-- [Dynamic Profile Page On Github](https://github.com/umutphp/github-action-dynamic-profile-page) - Get dynamically generated list of your commits (of the repositories that the action is configured) on GitHub profile readme.
-- [npm package downloads](https://github.com/maddhruv/github-readme-npm-downloads) - Show all of your npm packages and their total downloads
-- [All Dev Stats in Readme](https://github.com/anmol098/waka-readme-stats) - Are you an early 🐤 or a night 🦉? When are you most productive during the day? What languages you code in? And other stuff... Let's check out in your readme!
-- [Feedparser](https://pythonhosted.org/feedparser/) - Convenient processing of RSS files
-- [Profile README Widgets](https://github.com/marketplace/actions/profile-readme) - Add simple widgets to your profile readme.
-- [Spotify now playing card generator](https://github.com/kittinan/spotify-github-profile) - Generate your Spotify now playing card for your GitHub profile
-- [Markdown Badges](https://github.com/Ileriayo/markdown-badges) - Add badges to your profile.
-- [Latest Blog Posts and StackOverflow activity in readme](https://github.com/gautamkrishnar/blog-post-workflow) - Show your latest blog posts from any sources or StackOverflow activity on your GitHub profile/project readme automatically using the RSS feed using this Github Action
-- [GitHub Readme LinkedIn](https://github.com/soroushchehresa/github-readme-linkedin) - Get dynamically generated images from your LinkedIn profile on your GitHub readmes
-- [GitHub Readme Medium](https://github.com/omidnikrah/github-readme-medium) - Show your latest Medium article on your readmes!
-- [GitHub Readme StackOverflow](https://github.com/omidnikrah/github-readme-stackoverflow) - Dynamically generated your StackOverflow profile status on your GitHub readmes!
-- [StackOverflow Stats Badge](https://github.com/claytonjhamilton/stackoverflow-badge) - Display your stats with this Unique StackOverflow Badge!
-- [Github Profile README Generator](https://github.com/arturssmirnovs/github-profile-readme-generator) - This project allows you to create nice and simple github profile readme files.
-- [Profile Readme Stats](https://github.com/marketplace/actions/profile-readme-stats) - [Github Action] Showcase your github stats on your profile README.md
-- [README Jokes](https://github.com/ABSphreak/readme-jokes) - Random dev jokes in your GitHub README.
-- [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy) - 🏆 Add dynamically generated GitHub Trophy on your readme
-- [Github Readme Twitter](https://github.com/gazf/github-readme-twitter) - Show your latest tweet on your readmes.
-- [Random Dev Memes](https://github.com/techytushar/random-memer) - Random dev memes to display on your GitHub README.
-- [GitHub Readme Quotes](https://github.com/PiyushSuthar/github-readme-quotes) - Dev quotes on your GitHub Profile Readme.
-- [GitHub Profilinator](https://github.com/rishavanand/github-profilinator) - This tool contains small GUI components that you can hook together to generate markdown for your perfect readme.
-- [PageSpeed score](https://github.com/ankurparihar/readme-pagespeed-insights) - Generate website's PageSpeed score in animated svg form which can be used in GitHub README
-- [Gitwar Profile Score](https://github.com/iampavangandhi/Gitwar) - Add your Github Profile Score in README.
-- [Header Images for Github Profile READMEs](https://github.com/khalby786/REHeader) - Generate header images for your GitHub profile READMEs with custom content
-- [YouTube Channel Stats](https://github.com/DenverCoder1/github-readme-youtube-stats) - 📺 Display number of subscribers on YouTube and/or your channel's view count as a badge
-- [Current Book Status from GoodReads](https://github.com/theFr1nge/goodreads-readme) - Add a card of the current book you are reading that automatically syncs with GoodReads to display your progress.
-- [Readme Typing SVG](https://github.com/DenverCoder1/readme-typing-svg) - :zap: Dynamically generated, customizable SVG that gives the appearance of typing and deleting text
+  /* ===== CONTACT ===== */
+  .contact { background: var(--black); }
+  .contact-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-form {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+  .form-input {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    background: var(--dark2);
+    border: 1px solid rgba(201,168,76,0.15);
+    color: var(--text);
+    font-family: 'Cairo', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .form-input:focus { border-color: var(--gold); }
+  .form-input::placeholder { color: var(--text-muted); }
+  textarea.form-input { resize: vertical; min-height: 140px; }
+  .form-submit {
+    width: 100%;
+    padding: 1.1rem;
+    background: var(--gold);
+    color: var(--black);
+    border: none;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+  }
+  .form-submit:hover { background: var(--gold-light); transform: translateY(-2px); }
 
-## Articles
-- ["How To Create A GitHub Profile README"](https://www.aboutmonica.com/blog/how-to-create-a-github-profile-readme) - *Monica Powell*
-- ["How to Stand Out on Github with Profile READMEs"](https://medium.com/better-programming/how-to-stand-out-on-github-with-profile-readmes-dfd2102a3490?source=friends_link&sk=61df9c4b63b329ad95528b8d7c00061f) - *Jessica Lim*
-- ["What's on your GitHub Profile"](https://dev.to/waylonwalker/what-s-on-your-github-profile-40p3) - *Waylon Walker*
-- ["3 Ways to Spice up your Github Profile README 🔥"](https://dev.to/jayehernandez/3-ways-to-spice-up-your-github-profile-readme-1276) - *Jaye Hernandez*
-- ["Dynamically Generated Github Stats For Your Profile ReadMe"](https://dev.to/anuraghazra/dynamically-generated-github-stats-for-your-profile-readme-o4g) - *Anurag Hazra*
-- ["How to create an awesome GIF for your GitHub Profile README"](https://dev.to/satvikchachra/how-to-add-an-awesome-readme-to-your-github-profile-361n) - *Satvik Chachra*
-- ["Create a special repository in your GitHub Profile 🔨, supported and unsupported features"](https://torrocus.com/blog/special-github-repository/) - *Alex Malaszkiewicz*
-- ["How to create a Github Profile README with Dynamic Github Stats"](https://codewithghazi.com/how-to-create-a-github-profile-readme-with-dynamic-github-stats/) - *Ghazi Khan*
-- ["How I Built A Self-Updating README On My Github Profile"](https://www.mokkapps.de/blog/how-i-built-a-self-updating-readme-on-my-git-hub-profile/) - *Michael Hoffmann (Mokkapps)*
-- ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/) - *Simon Willison*
-- ["How to create an interactive README for your GitHub profile"](https://kavishhukmani.me/github-profile-interactive-readme-tutorial/) - *Kavish Hukmani*
-- ["什么？Github 居然可以这么玩？"](https://zhuanlan.zhihu.com/p/161705999) - *Tw93*
-- ["Getting started with Markdown Badges"](https://dev.to/ileriayo/mardown-badges-2og0) - *Ileriayo Adebiyi*
-- ["Show your latest dev.to posts automatically on your GitHub profile readme"](https://dev.to/gautamkrishnar/show-your-latest-dev-to-posts-automatically-in-your-github-profile-readme-3nk8)  - *Gautam krishna R*
-- ["How I Built A Self-Updating README by Webhooks and Netlify Functions"](https://github.com/RaoHai/RaoHai/blob/master/How-I-Built-A-Self-Updating-README-by-Webhooks-and-Netlify-Functions.md/) - *Rao Hai*
-- ["Build a Stunning README For Your GitHub Profile"](https://towardsdatascience.com/build-a-stunning-readme-for-your-github-profile-9b80434fe5d7) - *Martin Heinz*
-- ["How I added my Spotify statistics to my GitHub readme 📜"](https://dev.to/gargakshit/how-i-added-my-spotify-statistics-to-my-github-readme-4jdd) - *Akshit Garg*
-- ["Static Readme Regeneration"](https://dev.to/aralroca/static-readme-regeneration-4pf2) - *Aral Roca*
-- ["How to Create a Self-Updating README.md for Your GitHub Profile"](https://medium.com/@th.guibert/how-to-create-a-self-updating-readme-md-for-your-github-profile-f8b05744ca91) - *Thomas Guibert*
-- ["一文玩转github主页"](https://blog.holic-x.com/wv-blog/post/7ad96a5d.html) - *holic-x*
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--dark);
+    border-top: 1px solid rgba(201,168,76,0.1);
+    padding: 2.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--gold);
+    font-weight: 700;
+  }
+  .footer-copy { font-size: 0.8rem; color: var(--text-muted); }
+  .social-links { display: flex; gap: 1.2rem; }
+  .social-link {
+    width: 36px; height: 36px;
+    border: 1px solid rgba(201,168,76,0.2);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+  }
+  .social-link:hover { border-color: var(--gold); color: var(--gold); }
 
-## Tutorials
-- ["Create Impressive GitHub Portfolio"](https://www.youtube.com/watch?v=dkE4mVhwMB4) - *MTECHVIRAL*
-- ["How To Create a Github Profile ReadMe"](https://www.youtube.com/watch?v=DOiGs2NiDbU) - *James Q Quick*
-- ["How to create a GitHub profile README"](https://www.youtube.com/watch?v=vND_UY7xk24) - *Code With Confidence*
-- ["How To Create A GitHub Profile README"](https://www.youtube.com/watch?v=Y1z7_GfEPiE) - *Program With Erik*
-- ["Next Level GitHub Profile README"](https://youtu.be/ECuqb5Tv9qI) - *codeSTACKr*
+  /* ===== ANIMATIONS ===== */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 
-## Contribute
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s, transform 0.7s;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
 
-Contributions are always welcome!
-Please read the [contribution guidelines](contributing.md) first.
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    section { padding: 5rem 1.5rem; }
+    .hero { padding: 0 1.5rem; }
+    .hero-number { display: none; }
+    .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .form-row { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 1rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
 
-## Special Thanks 🙇
-- [Zetao Zhuang](https://github.com/zzetao) for making the amazing site for this repo!
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">H.R</div>
+  <ul class="nav-links">
+    <li><a href="#about">من أنا</a></li>
+    <li><a href="#skills">مهاراتي</a></li>
+    <li><a href="#projects">أعمالي</a></li>
+    <li><a href="#contact">تواصل</a></li>
+  </ul>
+</nav>
 
-## License
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid-line"></div>
+  <div class="hero-grid-line"></div>
+  <div class="hero-grid-line"></div>
 
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+  <div class="hero-content">
+    <span class="hero-tag">✦ مرحباً بكم في بورتفوليو</span>
+    <h1 class="hero-name">
+      حسام رمضان<br>
+      <span>مبدع رقمي</span>
+    </h1>
+    <p class="hero-title">مصمم واجهات · مطور ويب · صانع تجارب رقمية لا تُنسى</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">اكتشف أعمالي</a>
+      <a href="#contact" class="btn-outline">تواصل معي</a>
+    </div>
+  </div>
+  <div class="hero-number">01</div>
+</section>
 
-To the extent possible under law, [Abhishek Naidu](https://abhisheknaidu.tech/) has waived all copyright and related or neighboring rights to this work.
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-image-wrap reveal">
+      <div class="about-image-placeholder">
+        👤
+        <div class="about-image-border"></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="section-label">✦ من أنا</p>
+      <div class="gold-line"></div>
+      <h2 class="section-title">أبني <em>تجارب</em><br>رقمية متميزة</h2>
+      <p style="color: var(--text-muted); line-height: 1.9; margin-bottom: 1.5rem;">
+        مصمم ومطور متخصص في صناعة واجهات مستخدم مبهرة ومواقع ويب عالية الأداء.
+        أؤمن أن التصميم الجيد يجمع بين الجمال والوظيفة ليخلق تجربة لا تُنسى.
+      </p>
+      <p style="color: var(--text-muted); line-height: 1.9;">
+        مع سنوات من الخبرة في مجال التطوير الرقمي، أسعى دائماً لتقديم أفضل
+        الحلول الإبداعية التي تلبي احتياجات العملاء وتتخطى توقعاتهم.
+      </p>
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-number">+50</span>
+          <span class="stat-label">مشروع منجز</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">+30</span>
+          <span class="stat-label">عميل سعيد</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5</span>
+          <span class="stat-label">سنوات خبرة</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">التزام بالجودة</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <p class="section-label reveal">✦ مهاراتي</p>
+  <div class="gold-line reveal"></div>
+  <h2 class="section-title reveal">ما الذي <em>أتقنه</em></h2>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <span class="skill-icon">🎨</span>
+      <p class="skill-name">تصميم UI/UX</p>
+      <p class="skill-desc">أصمم واجهات جذابة وسهلة الاستخدام تضع تجربة المستخدم في المقدمة.</p>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>الإتقان</span><span>95%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:95%"></div></div>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon">💻</span>
+      <p class="skill-name">تطوير الواجهة الأمامية</p>
+      <p class="skill-desc">HTML, CSS, JavaScript, React — كل ما يلزم لبناء مواقع احترافية.</p>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>الإتقان</span><span>90%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:90%"></div></div>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon">⚡</span>
+      <p class="skill-name">تطوير الواجهة الخلفية</p>
+      <p class="skill-desc">Node.js, Python, قواعد بيانات — أبني أنظمة قوية وموثوقة.</p>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>الإتقان</span><span>80%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:80%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <p class="section-label reveal">✦ أعمالي</p>
+  <div class="gold-line reveal"></div>
+  <h2 class="section-title reveal">أحدث <em>مشاريعي</em></h2>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-img">🛒</div>
+      <div class="project-body">
+        <p class="project-tag">تجارة إلكترونية</p>
+        <h3 class="project-name">متجر إلكتروني متكامل</h3>
+        <p class="project-desc">منصة تسوق متكاملة مع نظام دفع آمن وواجهة مستخدم سلسة وجذابة.</p>
+        <a href="#" class="project-link">عرض المشروع →</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-img">📱</div>
+      <div class="project-body">
+        <p class="project-tag">تطبيق موبايل</p>
+        <h3 class="project-name">تطبيق إدارة المهام</h3>
+        <p class="project-desc">تطبيق ذكي لتنظيم المهام اليومية مع إشعارات ذكية وتقارير مفصلة.</p>
+        <a href="#" class="project-link">عرض المشروع →</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-img">🎯</div>
+      <div class="project-body">
+        <p class="project-tag">لوحة تحكم</p>
+        <h3 class="project-name">داشبورد تحليل البيانات</h3>
+        <p class="project-desc">لوحة تحكم تفاعلية لعرض وتحليل البيانات بأسلوب بصري احترافي.</p>
+        <a href="#" class="project-link">عرض المشروع →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <p class="section-label reveal">✦ تواصل معي</p>
+    <div class="gold-line reveal" style="margin: 0 auto 1.5rem;"></div>
+    <h2 class="section-title reveal">لنبدأ <em>معاً</em></h2>
+    <p class="reveal" style="color: var(--text-muted); line-height: 1.8;">
+      هل لديك مشروع في ذهنك؟ أنا هنا للاستماع وتحويل أفكارك إلى واقع رقمي مبهر.
+    </p>
+    <form class="contact-form reveal">
+      <div class="form-row">
+        <input type="text" class="form-input" placeholder="اسمك الكريم">
+        <input type="email" class="form-input" placeholder="بريدك الإلكتروني">
+      </div>
+      <input type="text" class="form-input" placeholder="موضوع الرسالة">
+      <textarea class="form-input" placeholder="اكتب رسالتك هنا..."></textarea>
+      <button type="submit" class="form-submit">أرسل الرسالة ✦</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">H.R</div>
+  <p class="footer-copy">© 2026 — جميع الحقوق محفوظة</p>
+  <div class="social-links">
+    <a href="#" class="social-link">in</a>
+    <a href="#" class="social-link">𝕏</a>
+    <a href="#" class="social-link">gh</a>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 100);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  document.querySelector('.form-submit').addEventListener('click', (e) => {
+    e.preventDefault();
+    e.target.textContent = 'تم الإرسال بنجاح ✓';
+    e.target.style.background = '#4CAF50';
+    setTimeout(() => {
+      e.target.textContent = 'أرسل الرسالة ✦';
+      e.target.style.background = '';
+    }, 3000);
+  });
+</script>
+</body>
+</html>
